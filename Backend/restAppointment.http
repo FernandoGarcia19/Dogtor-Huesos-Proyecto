@@ -1,0 +1,21 @@
+// Get All Appointments
+GET http://localhost:3000/appointments
+
+###Create Appointments
+POST http://localhost:3000/appointments
+Content-Type: application/json
+
+{
+    "ciClient": "98456",
+    "phoneClient": "712456",
+    "emailClient": "AVL@gmail.com",
+    "date": "2024-12-01",
+    "time": "Tarde",
+    "description": "Es una consulta no tan urgente porque le duele la pata a mi gato",
+    "typeService": "Revision general",
+    "typePet": "Perro",
+    "status": "Pendiente"
+}
+
+###Delete Appointments by _id
+DELETE http://localhost:3000/appointments/665f6c39c8cd8fa389049fcb

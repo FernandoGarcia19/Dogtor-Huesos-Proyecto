@@ -1,0 +1,33 @@
+###Get All Pet
+GET http://localhost:3000/pets
+
+###Get Pet by Owner's CI 
+GET http://localhost:3000/pets/owner/12345
+Content-Type: application/json
+
+###Post Pet
+POST http://localhost:3000/pets
+Content-Type: application/json
+
+{
+    "idClient": "66468b6fb26c0e1f34d49128",
+    "namePet": "Chiflo",
+    "species": "perro",
+    "weight": "10",
+    "age": "1",
+    "size": "gordo"
+}
+
+###Get pet by name
+GET http://localhost:3000/pets/Leo
+
+###Delete pet by name
+DELETE http://localhost:3000/pets/Falcon
+
+###PATCH pet by name
+PATCH http://localhost:3000/pets/Leo
+Content-Type: application/json
+
+{
+    "species": "Gato"
+}

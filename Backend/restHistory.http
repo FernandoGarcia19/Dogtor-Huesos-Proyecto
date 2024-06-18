@@ -1,0 +1,29 @@
+// Get All Clinicals Histories
+GET http://localhost:3000/clinical-history
+
+###Create History
+POST http://localhost:3000/clinical-history
+Content-Type: application/json
+
+{
+    "namePet": "Leo",
+    "date": "2024-07-02",
+    "condition": "nose",
+    "treatment": "lolito ferderico",
+    "notes": "ninguna"
+}
+
+### get clinical history by ID
+GET http://localhost:3000/clinical-history/664828f8b6844e3367e0d252
+
+### Update clinical history by ID
+PATCH http://localhost:3000/clinical-history/664827405edd3b80a03a3631
+Content-Type: application/json
+
+{
+    "condition": "Updated condition",
+    "treatment": "Updated treatment"
+}
+
+### Delete clinical history by ID
+DELETE http://localhost:3000/clinical-history/664828f8b6844e3367e0d252
