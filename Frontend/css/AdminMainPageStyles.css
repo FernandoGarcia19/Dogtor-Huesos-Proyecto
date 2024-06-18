@@ -1,0 +1,87 @@
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.6rem; /* 16px */
+    margin: 0;
+    padding: 0;
+    background-color: #ececec;
+    color: #000;
+}
+
+header {
+    background-color: #7dd4ce;
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+header .logo img {
+    width: 5rem;
+    height: auto;
+    margin-right: 1rem;
+}
+
+header .text_icon{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem; /* 16px */
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.option {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 2rem;
+    text-align: center;
+    width: 20rem;
+}
+
+.option img {
+    width: 5rem;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.option p {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.back-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.back-button a:hover {
+    text-decoration: none;
+}

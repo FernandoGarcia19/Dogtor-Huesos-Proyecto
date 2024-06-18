@@ -1,0 +1,123 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #7dd4ce;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Estilos de la sección principal */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.address-section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.address-section h2 {
+    margin-top: 0;
+    color: #7dd4ce;
+    font-size: 24px;
+}
+
+.address-section p {
+    margin: 10px 0;
+}
+
+address {
+    font-style: normal;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #7dd4ce;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #7dd4ce;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.back-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.back-button a:hover {
+    text-decoration: none;
+}

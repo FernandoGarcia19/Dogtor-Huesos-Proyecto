@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="css/CreateAppointmentsStyles.css" as="style">
+    <link rel="icon" href="img/logoFinal-removebg-preview.png">
+    <link rel="stylesheet" href="css/CreateAppointmentsStyles.css">
+    <title>Make an Appointment</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logoFinal-removebg-preview.png">
+            <span>Veterinaria "Dogtor Huesos"</span>
+        </div>
+        <nav>
+            <a href="/Frontend/index.html">Inicio</a>
+            <a href="/Frontend/index.html">Servicios</a>
+            <a href="#">Médicos</a>
+            <a href="#">Acerca de nosotros</a>
+        </nav>
+    </header>
+
+    <main>
+        <form id="appointmentForm"> 
+            <fieldset class="form-container">
+                <h2>Realizar Cita</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="ciClient" name="ciClient" placeholder="CI" class="inputs" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Nombre" class="inputs" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="emailClient" name="emailClient" placeholder="Email" class="inputs" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="phoneClient" name="phoneClient" placeholder="Teléfono" class="inputs" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="time" name="time" class="inputs" required>
+                            <option value="" disabled selected>Horario</option>
+                            <option value="Mañana">Mañana</option>
+                            <option value="Tarde">Tarde</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <select id="typeService" name="typeService" class="inputs" required>
+                            <option value="" disabled selected>Servicio</option>
+                            <option value="Medicina Canina">Medicina Canina</option>
+                            <option value="Vacunacion">Vacunacion</option>
+                            <option value="Esterilizacion">Esterilizacion</option>
+                            <option value="Desparasitacion">Desparasitacion</option>
+                            <option value="Odontología">Odontología</option>
+                            <option value="Medicina Felina">Medicina Felina</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="date" name="date" class="inputs" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <select id="petType" name="petType" class="inputs" required>
+                            <option value="" disabled selected>Mascota</option>
+                            <option value="Perro">Perro</option>
+                            <option value="Gato">Gato</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <textarea id="description" name="description" placeholder="Comentarios" class="inputs"></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label>
+                            <input type="checkbox" required>
+                            Lorem ipsum dolor sit amet.
+                        </label>
+                        <label>
+                            <input type="checkbox" required>
+                            Lorem ipsum dolor sit amet.
+                        </label>
+                    </div>
+                </div>
+                <div class="form-submit">
+                    <button type="submit">Enviar</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        © 2024 Veterinaria "Dogtor Huesos"
+    </footer>
+
+    <script src="/Frontend/scripts/scriptAppointment.js"></script>
+</body>
+</html>

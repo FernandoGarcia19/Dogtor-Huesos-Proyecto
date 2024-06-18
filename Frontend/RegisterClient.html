@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Frontend/css/RegisterClientStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="img/logoFinal-removebg-preview.png">
+    <title>Registrar Cliente - Veterinaria "Dogtor Huesos"</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./img/logoFinal-removebg-preview.png" alt="Logo de Dogtor Huesos" class="logo">
+            <div class="header-text">
+                <h2>Veterinaria "Dogtor Huesos"</h2>
+            </div>
+        </div>
+        <div class="back-button">
+            <a href="ManageClientView.html"><i class="fas fa-arrow-left"></i> Atrás </a>
+        </div>
+    </header>
+    <main>
+        <h1>Registrar Cliente</h1>
+        <form id="clientForm">
+            <input type="text" id="ci" name="ci" placeholder="C.I" required>
+            <input type="text" id="name" name="name" placeholder="Nombre" required>
+            <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+            <input type="tel" id="phone" name="phone" placeholder="Teléfono" required>
+            <input type="text" id="address" name="address" placeholder="Dirección" required>
+            <div class="button_container">
+                <button type="submit">Registrar</button>
+            </div>
+        </form>
+        <div id="message"></div>
+    </main>
+    <footer>
+        <p>1717 Av. Heroínas, Cochabamba, Bolivia</p>
+        <p>&copy; 2024 Dogtor Huesos. All rights reserved.</p>
+    </footer>
+    <script src="/Frontend/scripts/scriptClientForm.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="css/loginStyles.css" as="style">
+    <link rel="stylesheet" href="css/loginStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="img/logoFinal-removebg-preview.png">
+    <title>Veterinaria "Dogtor Huesos"</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido Trabajador</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div>
+                <img src="./img/logoFinal-removebg-preview.png" class="logo_final icon">
+            </div>
+            <div class="back-button">
+                <a href="index.html"><i class="fas fa-arrow-left"></i> Atrás </a>
+            </div>
+            <form action="AdminMainPage.html" method="get">
+                <div class="input-container">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="username" placeholder="Usuario" required>
+                </div>
+                <div class="input-container">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" placeholder="Contraseña" required>
+                </div>
+                <input type="submit" value="Iniciar Sesión" href="#">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

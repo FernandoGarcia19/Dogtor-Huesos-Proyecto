@@ -1,0 +1,142 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #7dd4ce;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header-text h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.back-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.back-button a:hover {
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.pet {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.pet:hover {
+    transform: translateY(-5px);
+}
+
+.pet h2 {
+    margin-top: 0;
+    color: #7dd4ce;
+}
+
+.pet p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #7dd4ce;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+    width: 20%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.pet-searched {
+    background-color: #f7f7f7;
+}
+
+#searchButton {
+    padding: 0.6rem 1rem;
+    background-color: #7dd4ce;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #5caaa0;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}

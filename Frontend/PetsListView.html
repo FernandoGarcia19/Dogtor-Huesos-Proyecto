@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Ver Mascotas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/Frontend/css/ViewPetsStyles.css">
+    <link rel="icon" href="img/logoFinal-removebg-preview.png">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./img/logoFinal-removebg-preview.png" alt="Dogtor Huesos Logo" class="logo">
+            <h1>Veterinaria "Dogtor Huesos"</h1>
+        </div>
+        <div class="header-text">
+            <h2>¡La salud de su mascota también nos importa!</h2>
+        </div>
+        <div class="back-button">
+            <a href="ManagePetView.html"><i class="fas fa-arrow-left"></i> Atrás </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar mascota por nombre">
+            <button id="searchButton">Buscar</button>
+        </div>
+        <div id="pets-container" class="grid-container"></div>
+    </main>
+    <script src="/Frontend/scripts/scriptPet.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Ver Clientes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="img/logoFinal-removebg-preview.png">
+    <link rel="stylesheet" href="/Frontend/css/ClientListView.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./img/logoFinal-removebg-preview.png" alt="Dogtor Huesos Logo" class="logo">
+            <h1>Veterinaria "Dogtor Huesos"</h1>
+        </div>
+        <div class="header-text">
+            <h2>¡La salud de su mascota también nos importa!</h2>
+        </div>
+        <div class="back-button">
+            <a href="ManageClientView.html"><i class="fas fa-arrow-left"></i> Atras </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="ci-input" placeholder="Ingrese CI">
+            <button id="search-btn">Buscar</button>
+        </div>
+        <div id="clients-container" class="grid-container"></div>
+    </main>
+    <script src="/Frontend/scripts/scriptClients.js"></script>
+</body>
+</html>

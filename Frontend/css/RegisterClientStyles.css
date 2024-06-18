@@ -1,0 +1,115 @@
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.6rem; /* 16px */
+    margin: 0;
+    padding: 0;
+    background-color: #ececec;
+    color: #000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #7dd4ce;
+    color: #fff;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 5rem;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.header-text h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.back-button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+main h1 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+form input, form button {
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #7dd4ce;
+}
+
+.button_container{
+    display: flex;
+    justify-content: center;
+}
+
+form button {
+    background-color:slategrey;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 23px;
+    width: 50%; 
+    padding: 10px; 
+    font-size: 1.6rem;
+    transition: background-color 0.3s;
+    
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #7dd4ce;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: center;
+}
