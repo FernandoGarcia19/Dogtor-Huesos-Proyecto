@@ -1,29 +1,48 @@
 const mongoose = require('mongoose');
 const createError = require('http-errors');
+const bcrypt = require('bcrypt');
 
 const Client = require('../Models/Client.model');
 
 module.exports = {
+    login: async (req, res, next) => {
+        try {
+            const { email, password } = req.body;
+            const user = await Client.findOne({ email });
+            if (!user) {
+                return res.status(401).json({ message: "Credenciales inválidas" });
+            }
+            const isMatch = await bcrypt.compare(password, user.password);
+            if (!isMatch) {
+                return res.status(401).json({ message: "Credenciales inválidas" });
+            }
+
+            res.status(200).json({ message: "Login exitoso", user });
+        } catch (error) {
+            console.error(error);
+            next(createError(500, "Error en el servidor"));
+        }
+    },
+    createNewClient: async (req, res, next) => {
+        try {
+            const client = new Client(req.body);
+            const result = await client.save();
+            res.send(result);
+        } catch (error) {
+            console.log(error.message);
+            if (error.name === 'ValidationError') {
+                next(createError(422, error.message));
+                return;
+            }
+            next(error);
+        }
+    },
     getAllClients : async (req,res,next)=>{
         try {
                 const results = await Client.find({}, {__v: 0});
                 res.send(results);
         } catch (error) {
             console.log(error.message);
-        }
-    },
-    createNewClient: async (req,res,next)=>{    
-        try {
-            const client = new Client(req.body);
-            const result = await client.save();
-            res.send(result);
-        } catch(error) {
-            console.log(error.message);
-            if(error.name === 'ValidationError') {
-                next(createError(422, error.message));
-                return;
-            }
-            next(error);
         }
     },
     getClientById: async (req,res,next)=>{

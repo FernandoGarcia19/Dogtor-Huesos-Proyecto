@@ -5,11 +5,12 @@ POST http://localhost:3000/clients
 Content-Type: application/json
 
 {
-    "ci": "00000",
-    "name": "Santiago Aviles",
-    "email": "AVL@gmail.com",
+    "ci": "34123123",
+    "name": "Iturri",
+    "email": "ichu@gmail.com",
+    "password": "lmao", 
     "phone": "712456",
-    "address": "En el sombrero ese #123",
+    "address": "Chapare",
     "pets": []
 }
 

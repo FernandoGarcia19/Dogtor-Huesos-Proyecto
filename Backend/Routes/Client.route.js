@@ -8,6 +8,8 @@ const Client = require('../Models/Client.model');
 //CRUD operation handling through client controller
 ClientRouter.get('/', ClientController.getAllClients);
 
+ClientRouter.post('/login', ClientController.login); 
+
 ClientRouter.post('/', ClientController.createNewClient);
 
 ClientRouter.get('/:id', ClientController.getClientById);
